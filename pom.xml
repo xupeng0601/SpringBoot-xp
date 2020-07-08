@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.xp.example</groupId>
+    <artifactId>springboot-example-xp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging><!-- 打包方式：注意： -->
+
+
+    <modules>
+           <module>springboot-global-example-handler</module> <!--全局异常处理-->
+    </modules>
+
+
+    <name>SpringBoot-Example-XP</name>
+    <description>SpringBoot各种整合记录</description>
+
+    <!--锁定版本-->
+    <properties>
+        <fastjson.version>1.2.31</fastjson.version>
+    </properties>
+
+    <!--统一jar包管理-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
